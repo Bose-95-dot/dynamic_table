@@ -1,0 +1,98 @@
+/* Container */
+.table-container {
+  padding: 20px;
+  max-width: 900px;
+  margin: auto;
+  background: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Table Actions */
+.table-actions {
+  margin-bottom: 15px;
+  display: flex;
+  gap: 10px;
+  justify-content: flex-start;
+}
+
+.action-button {
+  padding: 8px 14px;
+  background: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 14px;
+  transition: background 0.3s;
+}
+
+.action-button:hover {
+  background: #0056b3;
+}
+
+/* Dynamic Table */
+.dynamic-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.table-header {
+  background: #007bff;
+  color: white;
+  padding: 10px;
+  text-align: left;
+  font-size: 14px;
+  position: relative;
+}
+
+.table-cell {
+  padding: 10px;
+  border: 1px solid #ddd;
+  font-size: 14px;
+  background: white;
+}
+
+tr:nth-child(even) .table-cell {
+  background: #f4f4f4;
+}
+
+/* Inputs */
+.input-cell,
+.select-cell,
+.multiselect-cell {
+  width: 100%;
+  padding: 6px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.header-input,
+.type-selector,
+.option-input {
+  width: 100%;
+  padding: 4px;
+  border: none;
+  background: #eaf2ff;
+  font-size: 14px;
+  border-radius: 4px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .table-container {
+    padding: 10px;
+  }
+  
+  .table-actions {
+    flex-direction: column;
+  }
+
+  .action-button {
+    width: 100%;
+  }
+}
